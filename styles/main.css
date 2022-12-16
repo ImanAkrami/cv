@@ -37,7 +37,43 @@ h1 {
   font-variation-settings: 'wght' 850;
 }
 h2 {
-  font-variation-settings: 'wght' 750;
+  letter-spacing: 2px;
+  padding-left: 40px;
+  position: relative;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2.4rem;
+  margin-top: 1em;
+}
+
+h2:before {
+  background-color: #016ef1;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ul li:before {
+  background-color: #016ef1;
+  content: "";
+  height: 0.4em;
+  left: -16px;
+  margin-left: 0.28284em;
+  position: absolute;
+  top: 0.46716em;
+  transform: rotate(45deg);
+  width: 0.4em;
+}
+
+ul li:before, ol li:before {
+  content: '-';
+  font-weight: bold;
+  margin-right: 0.5em;
 }
 
 @media screen and (min-device-pixel-ratio: 1.5),
